@@ -227,6 +227,14 @@ mkdir -p data/LOL
 .venv/bin/python scripts/evaluate.py --help
 ```
 
+최종 평가 파일을 README 결과 표와 최종 보고서에 반영하려면 아래 명령을 사용합니다. 완료된 학습·평가의 checkpoint 및 로그 해시를 다시 확인한 뒤 문서를 갱신합니다.
+
+```bash
+.venv/bin/python scripts/summarize_results.py \
+  --run-dir reports/a_full_seed42 \
+  --evaluation-dir reports/a_final_seed42
+```
+
 최종 A 시험 점수를 확인한 후에는 **그 결과를 보고 B/C의 잡음 범위·학습률·선택 기준을 조정하지 않습니다.** 후속 설정 결정은 검증 50쌍에서 진행하고 시험 15쌍은 고정된 프로토콜의 비교 보고에 사용합니다. 이미 확인한 시험 결과를 개발 과정에 참고했다면 그 사실과 한계를 보고해야 합니다.
 
 ### 6. 자동 검증
@@ -336,7 +344,8 @@ peak RSS는 Python·PyTorch·라이브러리·활성값을 포함한 프로세�
 │   ├── prepare_data.py         # 중복 그룹 분할 및 데이터 검증
 │   ├── reproduce.py            # 공개 가중치 추론·CPU 초기 측정
 │   ├── train_a.py              # 새 초기값에서 A 학습
-│   └── evaluate.py             # 완료된 A의 최종 시험 평가
+│   ├── evaluate.py             # 완료된 A의 최종 시험 평가
+│   └── summarize_results.py    # 확인된 최종 결과를 README·보고서에 반영
 ├── tests/                      # 재현·데이터·평가 검증
 ├── vendor/                     # 고정 upstream 소스와 라이선스
 ├── weights/official_max.pkl    # 동작 확인용 공식 공개 checkpoint
