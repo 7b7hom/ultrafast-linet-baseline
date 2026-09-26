@@ -1,0 +1,181 @@
+{
+  "dataset": "LOL-v1",
+  "split": "official test",
+  "count": 15,
+  "experiment": "A",
+  "additional_synthetic_noise_sigma": 0.0,
+  "noise_condition": "no added synthetic noise; original capture noise may remain",
+  "aggregate": {
+    "psnr": 17.917277908325197,
+    "ssim": 0.5272092560927073
+  },
+  "per_image": [
+    {
+      "name": "1.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 18.94424057006836,
+      "ssim": 0.6953673362731934
+    },
+    {
+      "name": "111.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 23.080307006835938,
+      "ssim": 0.5645161271095276
+    },
+    {
+      "name": "146.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 16.344451904296875,
+      "ssim": 0.5659052729606628
+    },
+    {
+      "name": "179.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 10.581779479980469,
+      "ssim": 0.42951592803001404
+    },
+    {
+      "name": "22.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 21.658647537231445,
+      "ssim": 0.5675871968269348
+    },
+    {
+      "name": "23.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 11.817319869995117,
+      "ssim": 0.46071577072143555
+    },
+    {
+      "name": "493.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 17.02234649658203,
+      "ssim": 0.4416164457798004
+    },
+    {
+      "name": "547.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 19.11312484741211,
+      "ssim": 0.4847019910812378
+    },
+    {
+      "name": "55.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 11.629924774169922,
+      "ssim": 0.4706233739852905
+    },
+    {
+      "name": "665.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 15.872074127197266,
+      "ssim": 0.5091640949249268
+    },
+    {
+      "name": "669.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 21.671794891357422,
+      "ssim": 0.4943203032016754
+    },
+    {
+      "name": "748.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 20.630325317382812,
+      "ssim": 0.5811084508895874
+    },
+    {
+      "name": "778.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 20.20046615600586,
+      "ssim": 0.6081592440605164
+    },
+    {
+      "name": "780.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 16.87462615966797,
+      "ssim": 0.46457982063293457
+    },
+    {
+      "name": "79.png",
+      "sigma": 0.0,
+      "width": 600,
+      "height": 400,
+      "psnr": 23.317739486694336,
+      "ssim": 0.5702574849128723
+    }
+  ],
+  "metrics": {
+    "color_space": "RGB",
+    "dtype": "float32",
+    "data_range": 1.0,
+    "resolution": "full input resolution",
+    "prediction_clamp": [
+      0.0,
+      1.0
+    ],
+    "border_crop": 0,
+    "brightness_matching": false,
+    "quantize_before_scoring": false,
+    "aggregation": "arithmetic mean of per-image scores",
+    "ssim": "pinned vendor.metrics.ssim / pytorch_msssim.ssim defaults",
+    "psnr": "pinned vendor.metrics.psnr; exact equality returns 100 dB"
+  },
+  "selection": "max mean per-image validation PSNR, no added synthetic noise; ties keep earlier epoch",
+  "verification": {
+    "selected_epoch": 20,
+    "best_validation_psnr": 16.061188888549804,
+    "completed_epochs": 360,
+    "checkpoint_sha256": {
+      "best": "1e2df6a4e420bf8335790cd14c8102ca58f9d804126c7a31f3275f648d445fe6",
+      "last": "62267364ba54934e54b527d29b42d78d069f4c2024ccb787814fa14f8631d607"
+    },
+    "run_metadata_sha256": "f6c56b3ea9f086216b805eb5617d6c5dfff1c9379c9e3635a10a338f8ee5d5d4",
+    "training_summary_sha256": "126c2d797807cb4343d1e8774a796e1ff9ebdf279caa464483c1fe4bfec76652",
+    "training_log_sha256": "b7499305a12414edf06a26419fcb0a46f7d9f981895d6c73fde63b525d1149bd",
+    "validation_only_selection_verified": true
+  },
+  "manifests_sha256": {
+    "train": "03209fd4ef17be7794a675a52b54087cd98c6aa36230eaf23692022e9e2c54ba",
+    "validation": "5c835462afe878fc0acc181c31c0ebdaac337203bc686101e3ec8c5915e4d086",
+    "test": "653c1078718191477587e0915ba77e9045197c27471a16e33b673dfb5afc4df1"
+  },
+  "environment": {
+    "python": "3.12.6",
+    "torch": "2.14.0",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "cpu": "Apple M2 Pro",
+    "torch_threads": 1,
+    "interop_threads": 1
+  },
+  "official_test_used": true,
+  "test_used_for_checkpoint_selection": false,
+  "enhanced_images_saved": false,
+  "raw_dataset_images_copied": false
+}

@@ -1,0 +1,13 @@
+{
+  "completed_epochs": 360,
+  "planned_epochs": 360,
+  "best_validation_psnr": 16.061188888549804,
+  "best_epoch": 20,
+  "pilot": false,
+  "full_baseline_complete": true,
+  "checkpoint_sha256": {
+    "best": "1e2df6a4e420bf8335790cd14c8102ca58f9d804126c7a31f3275f648d445fe6",
+    "last": "62267364ba54934e54b527d29b42d78d069f4c2024ccb787814fa14f8631d607"
+  },
+  "official_test_used": false
+}
