@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/YuhanChen2024/UltraFast-LiNET",
+  "commit": "12e8c79566235fecc952d9a148011cf5fbb2c8ba",
+  "paper": "https://arxiv.org/html/2512.02965v2",
+  "files": {
+    "vendor/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "vendor/README.md": "db4c65f192f631b2be0b3555dbab6c69ef0353e5f606fa13da124bcb36da56ac",
+    "vendor/datasets.py": "99bd064d284b623658cd037427fb1221231336177f38f1322f03d6419fbd851b",
+    "vendor/dsconv.py": "1fd3dd1f69fe9ebb137998ef9c8489f683da75e38988b1126d3e6f129f0894cd",
+    "vendor/eval.py": "3d2a986d5153218f61032f26a3d07234dc60fe5f14755eedef1255b1753d1399",
+    "vendor/losses.py": "86bf16793d1f69e84293ca36076721058da278a6ec9c0cb5b5e4f776c894f38f",
+    "vendor/metrics.py": "ec6420c5d47ed8739d7dbca1b75c0dd94ea2b02185c39b1a5d805ee2ee6ef9a5",
+    "vendor/model.py": "f3cd708a2b185fde7f9fd219c2ad167938828f4b6d2755936de45ab022423ec9",
+    "vendor/test.py": "02ccfe84d0ca638b2af0650ff2f05296afa6e2aa226a4fce111715977c6c88a3",
+    "vendor/train.py": "b64064dff6db97796748f65a7081098116ff4bed400addbbcadb7d67f4c01a80"
+  },
+  "checkpoint_sha256": "6f8b28b3b9aef9efc00adcaba84ed3a30237ed8335534994379a9178d9252ae1",
+  "checkpoint_use": "reproduction diagnostic only; never initialize A/B/C from this checkpoint"
+}

@@ -1,0 +1,10 @@
+{
+  "dataset": "LOL-v1",
+  "project_page": "https://daooshee.github.io/BMVC2018website/",
+  "official_archive_url": "https://drive.google.com/file/d/157bjO1_cFuSd0HWDUuAmcHRJDVyWpOxB/view",
+  "archive_sha256": "47d85314b7927470cd48c97e5c1d6c896a56d6217c8e508d0736aff2d91aadcc",
+  "training_pairs": 485,
+  "official_test_pairs": 15,
+  "access": "Training images decoded for pairing/crop checks and pilot. Test files indexed and hashed only.",
+  "expected_data_root": "data/LOL"
+}

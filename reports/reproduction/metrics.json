@@ -1,0 +1,147 @@
+{
+  "purpose": "released-checkpoint diagnostic on a training image; not independent validation or A baseline",
+  "environment": {
+    "python": "3.12.6",
+    "torch": "2.14.0",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "cpu": "Apple M2 Pro",
+    "torch_threads": 1,
+    "interop_threads": 1
+  },
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "input_path": "LOL-v1/our485/low/10.png",
+  "input_sha256": "05b42767c7580affaa60d1b8385115c56f0cfac8e52f9afeb6f4286aa0fe3e1f",
+  "checkpoint_sha256": "6f8b28b3b9aef9efc00adcaba84ed3a30237ed8335534994379a9178d9252ae1",
+  "checkpoint_epoch_metadata": 120,
+  "parameters": 180,
+  "trainable_parameters": 180,
+  "parameter_tensor_bytes": 720,
+  "checkpoint_file_bytes": 22818,
+  "input_shape_nchw": [
+    1,
+    3,
+    400,
+    600
+  ],
+  "decoder_shapes": [
+    [
+      1,
+      3,
+      100,
+      150
+    ],
+    [
+      1,
+      3,
+      200,
+      300
+    ],
+    [
+      1,
+      3,
+      400,
+      600
+    ]
+  ],
+  "input_range": [
+    0.0,
+    0.20000000298023224
+  ],
+  "raw_output_range": [
+    0.034727759659290314,
+    1.2880363464355469
+  ],
+  "clipped_pixel_fraction": 1.3888889043300878e-05,
+  "saved_output_range": [
+    0.034727759659290314,
+    1.0
+  ],
+  "latency": {
+    "scope": "CPU model forward only, all 3 decoder outputs; excludes decode, tensor conversion, clamp, metrics, save",
+    "warmup": 10,
+    "repeats": 50,
+    "batch_size": 1,
+    "mean_ms": 27.39319668,
+    "median_ms": 27.2709995,
+    "p95_ms": 28.1622792,
+    "samples_ms": [
+      26.886166,
+      28.065333,
+      27.07925,
+      28.160583,
+      27.099959,
+      27.212416,
+      26.965791,
+      27.422041,
+      26.775209,
+      26.735542,
+      26.569334,
+      27.191084,
+      27.0745,
+      26.941667,
+      27.464833,
+      26.818917,
+      27.895,
+      28.581334,
+      28.115375,
+      27.799625,
+      26.968125,
+      26.71875,
+      27.60825,
+      27.788875,
+      27.056917,
+      27.418458,
+      27.488,
+      27.686584,
+      27.474459,
+      27.213791,
+      27.425542,
+      27.763125,
+      28.163667,
+      27.298916,
+      27.371,
+      27.005417,
+      27.517917,
+      26.950125,
+      27.168208,
+      27.243083,
+      26.860791,
+      27.154708,
+      28.00075,
+      26.944875,
+      27.112792,
+      28.983166,
+      27.981167,
+      27.450208,
+      27.239167,
+      27.749042
+    ]
+  },
+  "memory": {
+    "process_peak_rss_mib_after_timing": 319.984375,
+    "scope": "Process high-water RSS including Python, PyTorch, loaded libraries, weights, activations; not isolated model memory"
+  },
+  "single_training_image_metrics_not_benchmark": {
+    "input_psnr": 6.508431911468506,
+    "input_ssim": 0.1722966879606247,
+    "enhanced_psnr": 20.583627700805664,
+    "enhanced_ssim": 0.49809572100639343,
+    "protocol": "RGB float32 [0,1], output clamped, per-image full-resolution, no border crop, no GT brightness correction; pytorch_msssim.ssim default 11x11 sigma1.5 window"
+  },
+  "operations": {
+    "conv_macs": 6567750,
+    "conv_bias_adds": 6567750,
+    "pool_nominal_flops": 10759500,
+    "shift_adds": 11928000,
+    "gate_multiplies": 1491000,
+    "branch_adds": 4736400,
+    "skip_adds": 5670000,
+    "relu_elements": 1491000,
+    "sigmoid_elements": 1491000,
+    "nominal_arithmetic_flops": 54288150,
+    "convention": "Full 3-output forward, multiply/add=1 each; pool nominal 3x3 including padding; excludes sigmoid/ReLU, indexing, copies, nearest interpolation, allocation",
+    "thop_partial_ops_not_total_flops": 7763250.0,
+    "thop_limitation": "Default THOP omits functional shift additions, gating, skip/branch additions; do not report as total FLOPs"
+  }
+}

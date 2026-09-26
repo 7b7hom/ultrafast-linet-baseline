@@ -1,0 +1,114 @@
+{
+  "dataset": "LOL-v1",
+  "split": "test",
+  "split_seed": 42,
+  "partition_algorithm": "Sorted filenames -> connected components sharing low/high SHA256 -> seeded group shuffle -> deterministic exact-50 subset-sum",
+  "test_pixels_decoded": false,
+  "pairs": [
+    {
+      "name": "1.png",
+      "low": "eval15/low/1.png",
+      "low_sha256": "12f3b5d4c3823dbf2503e825944213974248e788726b6f7aebb275b644c76c89",
+      "high": "eval15/high/1.png",
+      "high_sha256": "e47ae1d4a84c19cabdc1092a4bab1f8c99f7909e9783ba2930580d7f2cf7a856"
+    },
+    {
+      "name": "111.png",
+      "low": "eval15/low/111.png",
+      "low_sha256": "5f10ef298a617c239e0728610a565416b4503ed40384cc9710e8bbd55f22ef47",
+      "high": "eval15/high/111.png",
+      "high_sha256": "35f002dcc27712b1662e764c75326e7576205ca191440ae31b5ae98d999f530a"
+    },
+    {
+      "name": "146.png",
+      "low": "eval15/low/146.png",
+      "low_sha256": "6a955842b2f8dde700487973958ee1f99c43123764d579744b2ff517fac5870e",
+      "high": "eval15/high/146.png",
+      "high_sha256": "2384b23a21e8e1e552019324a412345a703ce166227b0df8bc5bd3200df2e9ce"
+    },
+    {
+      "name": "179.png",
+      "low": "eval15/low/179.png",
+      "low_sha256": "57897f167aa7fb5d3dc0759b4406c038023d97a6dd154bb9e5cf28043bdea75c",
+      "high": "eval15/high/179.png",
+      "high_sha256": "8c65ac7c4398920a47edca40e7a1cf6f4bf0e5c051db96e59045ab2e54d5f2de"
+    },
+    {
+      "name": "22.png",
+      "low": "eval15/low/22.png",
+      "low_sha256": "7cf9d3f9ac01336c6249afd2ea5389e6bf588df7f27eb3cf5124e6f0394e30b6",
+      "high": "eval15/high/22.png",
+      "high_sha256": "7342c992ede8d4e082c58769373bdbc78d71410bc848e597e56f1ef85270a5e0"
+    },
+    {
+      "name": "23.png",
+      "low": "eval15/low/23.png",
+      "low_sha256": "76921fb9387b71a2d2f69ed2895425d401c418ed767dd533d590878caa92d53b",
+      "high": "eval15/high/23.png",
+      "high_sha256": "0ae69022f3e425461d9e29c3de17b7266dd489b3fb851f20190fa62f0b108031"
+    },
+    {
+      "name": "493.png",
+      "low": "eval15/low/493.png",
+      "low_sha256": "d196959186cb53980d2138ef13a5dd18840e613c0296c6c7b9a720fde3e0a37d",
+      "high": "eval15/high/493.png",
+      "high_sha256": "2e48ec4965f096d02c92a0b562c452d728cd0ee2200b78076b7a15eaa00daf93"
+    },
+    {
+      "name": "547.png",
+      "low": "eval15/low/547.png",
+      "low_sha256": "cafe00e2a3b0063696ab7aae46148c540797ab029f7374d25c05ad90a9015b38",
+      "high": "eval15/high/547.png",
+      "high_sha256": "bb1c9a160338a61d1f49003f045dcd269e53143d7e1a70c2d0956b22f18859de"
+    },
+    {
+      "name": "55.png",
+      "low": "eval15/low/55.png",
+      "low_sha256": "ec184979d51b4aaab7d31a788b9c8cda9d9b26620ae16f70905192e1873aa2eb",
+      "high": "eval15/high/55.png",
+      "high_sha256": "e4b4035aad7b2493eb6470b7e26b21d49231c7b4e3dfd8729a747d7e2354d11a"
+    },
+    {
+      "name": "665.png",
+      "low": "eval15/low/665.png",
+      "low_sha256": "a4c456b2d579d06506525eee05376ab7595a995fa01bc45314a917e2ebf78c30",
+      "high": "eval15/high/665.png",
+      "high_sha256": "0811a6a47f00c7c4da1ae1f3b28dd9705e78a0fa966d8d34c56fea067e1f5d02"
+    },
+    {
+      "name": "669.png",
+      "low": "eval15/low/669.png",
+      "low_sha256": "d89c9566f9c867eec4942e37b3d7c200b72f47877c761e49711702ad9bbb2d05",
+      "high": "eval15/high/669.png",
+      "high_sha256": "2ad42c19775e0e08bcfcd8e11ef05f8306a448c17654cd377438a6e995112534"
+    },
+    {
+      "name": "748.png",
+      "low": "eval15/low/748.png",
+      "low_sha256": "325c720df5669e37b9f192bfa9a60add144b82e5e68d9f684c0010a0047b0056",
+      "high": "eval15/high/748.png",
+      "high_sha256": "76df8a51b327ed2ca0867f9111f1bd6393e890894845689b3700b8adf1588e5e"
+    },
+    {
+      "name": "778.png",
+      "low": "eval15/low/778.png",
+      "low_sha256": "26667c53ff5d97a794c3bfed729a6fb88ed5298e834787b28a21852853a2e830",
+      "high": "eval15/high/778.png",
+      "high_sha256": "4d414e32e8dc885901bbde91bf679db3ae1f6646f13616177c62fa92eeb28077"
+    },
+    {
+      "name": "780.png",
+      "low": "eval15/low/780.png",
+      "low_sha256": "f78aad566110d3c2efc7dc3ebc086043385af27231f44d3b03780becb492e972",
+      "high": "eval15/high/780.png",
+      "high_sha256": "67ee66f4900db3d82b834583f49326ac93cb967f9610db60a075ef9c932a7bed"
+    },
+    {
+      "name": "79.png",
+      "low": "eval15/low/79.png",
+      "low_sha256": "09de3b7526bcddedc8b24317592632f4007c989a79e2ada173424dbbf91f35f2",
+      "high": "eval15/high/79.png",
+      "high_sha256": "065fdc7f79a0fcce86b79e169ebd536a7ec98c1912343c5bd4deae99027bb175"
+    }
+  ]
+}

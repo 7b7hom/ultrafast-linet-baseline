@@ -1,0 +1,14 @@
+..........................                                               [100%]
+=============================== warnings summary ===============================
+outputs/ultrafast-linet-baseline/tests/test_baseline.py::test_operation_counter_includes_shift_arithmetic
+outputs/ultrafast-linet-baseline/tests/test_baseline.py::test_operation_counter_includes_shift_arithmetic
+  <workspace>/work/.venv/lib/python3.12/site-packages/thop/profile.py:12: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    if LooseVersion(torch.__version__) < LooseVersion("1.0.0"):
+
+outputs/ultrafast-linet-baseline/tests/test_baseline.py::test_operation_counter_includes_shift_arithmetic
+outputs/ultrafast-linet-baseline/tests/test_baseline.py::test_operation_counter_includes_shift_arithmetic
+  <workspace>/work/.venv/lib/python3.12/site-packages/thop/profile.py:68: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    if LooseVersion(torch.__version__) >= LooseVersion("1.1.0"):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+26 passed, 4 warnings in 9.52s

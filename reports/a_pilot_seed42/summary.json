@@ -1,0 +1,7 @@
+{
+  "completed_epochs": 1,
+  "best_validation_psnr": 15.228097047805786,
+  "pilot": true,
+  "full_baseline_complete": false,
+  "official_test_used": false
+}

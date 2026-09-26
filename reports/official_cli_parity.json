@@ -1,0 +1,6 @@
+{
+  "official_cli_output_matches_wrapper_png_exactly": true,
+  "max_pixel_error_uint8": 0,
+  "sample": "LOL-v1 our485/low/10.png",
+  "official_test_used": false
+}

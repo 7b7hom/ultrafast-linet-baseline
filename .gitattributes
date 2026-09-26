@@ -1,0 +1,4 @@
+# Preserve exact bytes for provenance and checkpoint/manifest hash verification.
+* -text whitespace=cr-at-eol
+*.pt binary
+*.pkl binary
