@@ -130,7 +130,7 @@ mkdir -p data/LOL
   --threads 1 --warmup 10 --repeats 50
 ```
 
-이 명령은 `input.png`, `enhanced.png`, `target.png`, `comparison.png`, `metrics.json`을 로컬에 생성합니다. 이미지 원본 및 비교 이미지를 GitHub에 재배포하는 것을 전제로 하지 않습니다.
+이 명령은 `input.png`, `enhanced.png`, `target.png`, `comparison.png`, `metrics.json`을 로컬에 생성합니다. 이 공개 checkpoint의 진단 결과와 README에 실은 A 모델의 테스트 예시는 서로 다른 결과입니다.
 
 `10.png`는 공식 원래 학습 세트의 이미지입니다. 공개 checkpoint가 이미 학습에 사용했을 수 있어 이 이미지의 PSNR·SSIM은 독립 시험 성능이 아닙니다. 새 A 모델의 결과와도 구분합니다.
 
@@ -333,7 +333,9 @@ peak RSS는 Python·PyTorch·라이브러리·활성값을 포함한 프로세�
 
 재개용 `last.pt`에는 가중치, optimizer, scheduler, epoch, 설정, 파일럿 표시, PyTorch RNG와 DataLoader generator 상태, 현재까지의 best 가중치·점수가 저장됩니다. `best.pt`에는 선택된 가중치와 epoch·설정·점수 등 평가용 정보가 저장됩니다. `--resume`는 같은 출력 폴더의 `last.pt`를 사용하여 완료된 epoch 다음부터 학습합니다. 설정·분할·학습 소스 해시가 달라진 실행은 이어 붙이지 않습니다.
 
-원본 데이터, 데이터에서 만든 비교 이미지, 가상환경은 GitHub에 포함하지 않습니다. 데이터는 공식 출처에서 취득하고, 실행 산출물을 공유할 때도 데이터 제공자의 사용·배포 조건을 확인합니다.
+전체 데이터셋과 가상환경은 GitHub에 포함하지 않습니다. README에는 LOL-v1 테스트 목록의 첫 두 장(`1.png`, `111.png`)에 대한 A 모델의 비교 이미지만 [docs/assets](assets/)에 제공합니다. 데이터는 [공식 출처](https://daooshee.github.io/BMVC2018website/)에서 받으며, 데이터 이미지의 권리는 원 권리자에게 있고 저장소의 코드 라이선스와는 별개입니다.
+
+예시는 기존 최종 평가에 사용한 `reports/a_full_seed42/best.pt`(epoch 20)로 `evaluate.py --save-images`를 실행해 만들었습니다. 전체 테스트 15쌍의 PSNR·SSIM이 기존 평가 기록과 일치하는 것을 확인했습니다. 각 패널은 원본 600×400 픽셀을 그대로 배치했고 밝기 조정·크롭·리사이즈를 하지 않았습니다. 샘플 선택 방식, checkpoint·이미지 해시와 개별 점수는 [examples.json](assets/examples.json)에 기록했습니다.
 
 ## 후속 B/C 실험에서 유지할 원칙
 

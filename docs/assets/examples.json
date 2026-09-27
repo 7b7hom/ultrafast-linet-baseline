@@ -1,0 +1,35 @@
+{
+  "dataset": "LOL-v1",
+  "source": "https://daooshee.github.io/BMVC2018website/",
+  "split": "official test",
+  "selection": "first two entries of manifests/test.json; not selected by score",
+  "model": "UltraFast-LiNET-Max A baseline",
+  "selected_epoch": 20,
+  "checkpoint_sha256": "1e2df6a4e420bf8335790cd14c8102ca58f9d804126c7a31f3275f648d445fe6",
+  "additional_synthetic_noise_sigma": 0,
+  "display": "original 600x400 RGB panels, PNG, no crop/resize/brightness adjustment; 52px labels added above",
+  "all_15_recomputed_scores_match_recorded_within": 1e-08,
+  "dataset_image_rights": "Dataset image rights remain with their owners; repository code license does not relicense them.",
+  "samples": [
+    {
+      "name": "1.png",
+      "comparison_file": "a-example-1.png",
+      "comparison_sha256": "3c406364c65fd645c006387d3112be8e5744766ccbdd1c42c2420715f68bfacf",
+      "low_sha256": "12f3b5d4c3823dbf2503e825944213974248e788726b6f7aebb275b644c76c89",
+      "high_sha256": "e47ae1d4a84c19cabdc1092a4bab1f8c99f7909e9783ba2930580d7f2cf7a856",
+      "enhanced_png_sha256": "37dae2a1215903be7de8a8f41a2aea7b0753f39a9218129457cb4871fe16e471",
+      "psnr": 18.94424057006836,
+      "ssim": 0.6953673362731934
+    },
+    {
+      "name": "111.png",
+      "comparison_file": "a-example-111.png",
+      "comparison_sha256": "8df2f78c350321fdbbaded64e908d8a835499bc1a75f58266b228215db1949e5",
+      "low_sha256": "5f10ef298a617c239e0728610a565416b4503ed40384cc9710e8bbd55f22ef47",
+      "high_sha256": "35f002dcc27712b1662e764c75326e7576205ca191440ae31b5ae98d999f530a",
+      "enhanced_png_sha256": "f23fc355650c9faa24afa45f3621fda9062ad3665042c6a2af90aaca249aa9e1",
+      "psnr": 23.080307006835938,
+      "ssim": 0.5645161271095276
+    }
+  ]
+}

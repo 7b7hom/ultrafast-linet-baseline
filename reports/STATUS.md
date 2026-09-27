@@ -87,4 +87,4 @@ LOL 공식 배포본 485/15쌍을 확보했습니다. 학습·검증·시험은 
 
 공식 `vendor/test.py`도 같은 훈련 이미지로 직접 실행했습니다. 생성 PNG와 새 추론 코드의 PNG가 **모든 픽셀에서 동일**했습니다([official_cli_parity.json](official_cli_parity.json), 최대 uint8 픽셀 오차 0).
 
-공식 코드의 출처와 라이선스는 [고정 upstream](https://github.com/YuhanChen2024/UltraFast-LiNET/tree/12e8c79566235fecc952d9a148011cf5fbb2c8ba), [원본 라이선스](../vendor/LICENSE), [저장소 라이선스](../LICENSE)에서 확인할 수 있습니다. 데이터 원본과 비교 PNG는 이 코드 저장소에 포함하지 않습니다.
+공식 코드의 출처와 라이선스는 [고정 upstream](https://github.com/YuhanChen2024/UltraFast-LiNET/tree/12e8c79566235fecc952d9a148011cf5fbb2c8ba), [원본 라이선스](../vendor/LICENSE), [저장소 라이선스](../LICENSE)에서 확인할 수 있습니다. 이 초기 공개 모델 진단의 비교 PNG는 로컬에 보관합니다. 이후 완료한 A 모델의 테스트 예시 두 장은 [README](../README.md#보정-예시)에 추가했습니다.
